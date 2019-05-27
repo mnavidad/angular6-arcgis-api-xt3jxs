@@ -23,7 +23,7 @@ export class MapComponent implements OnInit  {
     this.arcgisService.loaded$.subscribe(loaded => {
       if(loaded) {
         this.arcgisService.constructMap({basemap: this.basemap, elevation: true}).then(map => {
-          this.arcgisService.constructSceneView(
+          this.arcgisService.constructMapView(
             { 
             map: map,
             container: this.id,
