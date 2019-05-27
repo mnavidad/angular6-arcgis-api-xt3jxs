@@ -1,0 +1,16 @@
+:host {
+  font-family: Lato;
+  text-align: center;
+}
+h2 {
+  color: darkblue;
+}
+#map {
+  height: 300px;
+  width: 100%;
+}
+.container {
+  background: lightgray;
+  padding: 10px;
+  margin: 10px;
+}
