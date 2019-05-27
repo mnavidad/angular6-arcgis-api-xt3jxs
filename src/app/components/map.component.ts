@@ -7,7 +7,7 @@ import { ArcgisApiService } from '../services';
   styles: []
 })
 export class MapComponent implements OnInit  {
-  sceneView: any;
+  mapView: any;
 
   @Input() id: string;
   @Input() center: [number, number];
@@ -30,7 +30,7 @@ export class MapComponent implements OnInit  {
             center: [1, 45],
             zoom: 5
             }
-            ).then(sceneView => this.sceneView = sceneView)
+            ).then(MapView => this.mapView = MapView)
         })
       }
     })
