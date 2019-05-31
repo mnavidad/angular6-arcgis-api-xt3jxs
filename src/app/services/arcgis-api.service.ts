@@ -93,6 +93,7 @@ export class ArcgisApiService {
       view: view,
       content: layerList
 });
+
           view.ui.add(homeWidget,  "top-left");
           view.ui.add(printExpand,"top-right");
           view.ui.add(bgExpand,"top-right");
